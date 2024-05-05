@@ -36,7 +36,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+	/* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif */
+	@font-face {
+		font-family: PoppinsRegular
+		src: url(PoppinsRegular);
+	}
 	margin: .5em 0;
 	font-size: 1.75rem;
 }
@@ -278,6 +282,7 @@ h2 {font-size: 1.5rem;}
 	padding-bottom: 5rem;
 	padding-top: 5rem;
 	text-align: center;
+
 }
 
 }
@@ -290,7 +295,7 @@ img {
 
 /* Section: Products */
 
-.project-text .project-link{
+/* .project-text .project-link{
 	color:#fff;
 	display:block;
 	background-color: #fff;
@@ -299,7 +304,7 @@ img {
 	text-align:center;
 	text-decoration: none;
 	
-}
+} */
 
 
 .project-name {
