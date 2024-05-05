@@ -27,7 +27,7 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #282828;
-	background-color: #ffffff;
+	background-color: #f4ebe2;
 }
 
 h1,
@@ -58,7 +58,7 @@ aside {
 --------------------------------------------- */
 a,
 a:visited { 
-	color: #008000;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ a:focus {
 /* Header
 --------------------------------------------- */
 .site-header {
-	background-color: #fff;
+	background-color: #d8a475;
 	/* add flex styles here */
 	display: flex;
 	justify-content: space-between;
@@ -131,10 +131,11 @@ h2 {font-size: 1.5rem;}
 	left: 0;
 	right: 0;
 	z-index: 2;
-	background-color: #fff;
+	background-color: #d8a475;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+
 
 .menu-toggle {
 	display: block;
@@ -144,7 +145,6 @@ h2 {font-size: 1.5rem;}
 }
 
 .product {
-	box-shadow: 0 0 3px 2px #ffe6bf;
 	margin-bottom: 1rem;
 	max-width: 12rem;
 }
@@ -217,7 +217,7 @@ h2 {font-size: 1.5rem;}
 	.site-navigation a {
 		line-height: 4.5rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
 		padding: 0 1rem;
-		background-color: #fff;
+		background-color: #d8a475;
 	}
 }
 
@@ -253,7 +253,7 @@ h2 {font-size: 1.5rem;}
 	transform: translateY(-50%);
 	margin: 0;
 	font-size: 3rem;
-	color: #fff;
+	color: #d8a475;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -275,6 +275,8 @@ h2 {font-size: 1.5rem;}
 	.section-about {
 	width: 50%;
 	margin: 0 auto;
+	padding-bottom: 5rem;
+	padding-top: 5rem;
 }
 
 }
@@ -288,7 +290,7 @@ h2 {font-size: 1.5rem;}
 .product-text .product-link{
 	color:#fff;
 	display:block;
-	background-color: #458b45;
+	background-color: #fff;
 	padding: 1rem 1rem;
 	width:fit-content;
 	text-align:center;
@@ -296,9 +298,9 @@ h2 {font-size: 1.5rem;}
 }
 
 .product {
-	box-shadow: 0 0 3px 2px #ffe6bf;
 	margin-bottom: 1rem;
 	max-width: 12rem;
+    border-radius: 30%;
 }
 .product-text{
 	padding: 1rem;
@@ -321,11 +323,14 @@ h2 {font-size: 1.5rem;}
 	} 
 
 	.site-footer {
-	display: flex;
-	justify-content:space-between;
+	/* display: flex;
+	justify-content:center;
 	flex-direction: row;
-	align-items: end;
-		
+	align-items:center;
+	padding-left: 2rem;
+	padding-bottom: 4rem;
+		 */
+/* figure out footer */
 
 	}
 }
@@ -333,7 +338,7 @@ h2 {font-size: 1.5rem;}
 /* Footer
 --------------------------------------------- */
 
-.site-footer{
+/* .site-footer{
 	background-color: rgb(250, 225, 229);
 
 }
@@ -344,7 +349,7 @@ h2 {font-size: 1.5rem;}
 .site-footer li{
 	list-style-type: none;
 }
- /* */
+  */
 
 
 
@@ -392,7 +397,7 @@ h2 {font-size: 1.5rem;}
 	.site-navigation a {
 		line-height: 4.5rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
 		padding: 0 1rem;
-		background-color: #fff;
+		background-color:#d8a475;
 	}
 }
 
@@ -463,11 +468,12 @@ h2 {font-size: 1.5rem;}
 .project-text .project-link{
 	color:#fff;
 	display:block;
-	background-color: #458b45;
+	background-color: #2d342d;
 	padding: 1rem 1rem;
 	width:fit-content;
 	text-align:center;
 	text-decoration: none;
+	border-radius: 10%;
 }
 
 .project {
@@ -497,7 +503,7 @@ h2 {font-size: 1.5rem;}
 
 	.site-footer {
 	display: flex;
-	justify-content:space-between;
+	justify-content:cent
 	flex-direction: row;
 	align-items: end;
 		
@@ -514,10 +520,10 @@ h2 {font-size: 1.5rem;}
 }
 .site-footer ul{
 	padding: 0;
-}
+} */
 
-.site-footer li{
+/* .site-footer li{
 	list-style-type: none;
 }
- /* */
+ 
 
