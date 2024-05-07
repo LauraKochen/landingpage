@@ -173,17 +173,6 @@ h2 {font-size: 1.5rem;}
 	
 }
 
-/* 
-.site-footer {
-	background-color: rgb(253, 236, 239);
-	padding: 1 rem;
-}
-
-/* .site-footer ul {
-	list-style-type: none;
-	padding: 0;
-	text-align: left;
-} */ 
 
 /* END -- STYLES FOR MOBILE MENU */
 
@@ -285,15 +274,6 @@ h2 {font-size: 1.5rem;}
 
 /* Section: projects */
 
-.project-text .project-link{
-	color:#fff;
-	display:block;
-	background-color: #458b45;
-	padding: 1rem 1rem;
-	width:fit-content;
-	text-align:center;
-	text-decoration: none;
-}
 
 .project {
 	box-shadow: 0 0 3px 2px #ffe6bf;
@@ -302,6 +282,7 @@ h2 {font-size: 1.5rem;}
 }
 .project-text{
 	padding: 1rem;
+
 }
 
 @media (min-width: 50em) {
