@@ -68,29 +68,14 @@ aside {
 	padding: 0 1rem;
 }
 
-/* header and nav */
+/* Header
+--------------------------------------------- */
 
-.site-wrapper {
-	max-width: 120rem;
-	margin: 0 auto;
-}
-
-.site-header {
-	background-color: #E5C6A9
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-/* .page-header {
-	position: relative;
-} */
-
+/* Page Header */
 .page-header img {
 	display: block;
 	object-fit: cover;
 	object-position: center;
-	width: 60%;
 	margin: 0 auto;
 }
 
@@ -102,12 +87,41 @@ aside {
 	right: 0;
 	z-index: 1;
 	margin: 2rem;
-	font-size: 10rem;
-	color: #3c3b20;
-	/* text-transform: uppercase; */
+	font-size: 4rem;
 	text-align: center;
-
 }
+
+@media (min-width: 43.75em) 
+{
+	.page-header h1 {
+		font-size: 10rem;
+	}
+	
+	.page-header img {
+		width: 60%;
+
+	}
+}
+/* Navigation */
+.site-wrapper {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.site-header {
+	background-color: #E5C6A9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-name, .site-name:visited {
+	max-width: 6rem;
+	margin: 1rem;
+	font-size: 1.6rem;
+	color:rgb(72, 37, 37)
+	
+	}
 
 .site-logo {
 	max-width: 6rem;
@@ -138,7 +152,6 @@ aside {
 	text-decoration: none;
 	font-family: "Lato", sans-serif;
 	font-weight: 600;
-
 }
 
 .site-navigation ul {
@@ -148,9 +161,8 @@ aside {
 	left: 0;
 	right: 0;
 	z-index: 2;
-	background-color: #E5C6A9
+	background-color: #E5C6A9;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 .site-navigation.toggled ul {
@@ -163,7 +175,6 @@ aside {
 	border: 0;
 	padding: 1rem;
 }
-
 
 .menu-toggle:focus { 
 	border: 0;
@@ -199,29 +210,6 @@ aside {
 	}
 }
 
-	.site-name, .site-name:visited {
-	max-width: 6rem;
-	margin: 1rem;
-	font-size: 1.6rem;
-	color:rgb(72, 37, 37)
-	
-	}
-
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-
-
-
-/* Header
---------------------------------------------- */
-
 
 /* Main
 --------------------------------------------- */
@@ -231,10 +219,6 @@ aside {
 	/* media for about section */
 
 	@media (min-width: 50em) {
-
-		.page-header h1 {
-			font-size: 10rem;
-		}
 		
 		.section-about {
 		width: 50%;
@@ -330,7 +314,7 @@ aside {
 	padding-top: 2rem;
 	text-align: center;
 	top: 4.5rem;
-	background-color: #E5C6A9
+	background-color: #E5C6A9;
 	font-family:  "Lato", sans-serif;
 	font-weight: 600;
 	}
