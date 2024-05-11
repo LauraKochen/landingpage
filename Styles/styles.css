@@ -53,6 +53,7 @@ aside {
 
 .page-header h1 {
   font-family: "Oregano", cursive;
+  font-weight: 200;
   padding-top: 3rem;
   top: 50%;
   left: 0;
@@ -65,7 +66,8 @@ aside {
 
 @media (min-width: 43.75em) {
   .page-header h1 {
-    font-size: 8rem;
+    font-size: 5rem;
+    font-weight: 200;
   }
 
   .page-header img {
@@ -165,8 +167,6 @@ aside {
   .site-navigation.toggled ul {
     display: flex;
     justify-content: flex-end;
-    position: relative;
-    top: 0;
   }
 
   .site-navigation a {
@@ -230,20 +230,10 @@ img {
   height: auto;
 }
 
-@media (min-width: 50em) {
-  .projects-wrapper {
-    margin: 0 10rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-    justify-content: center;
-  }
-
-  .contact-me {
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
+.contact-me {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .site-footer {
