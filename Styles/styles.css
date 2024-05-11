@@ -1,36 +1,11 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic (CALLED IN ANOTHER FILE)
-	- Normalize
-	- Box sizing
-	- Media width
-# Base
-	- Typography
-	- Elements
-	- Links
-# Layouts
-# Components
-	- Header
-	- Main
-	- Footer
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-
-/* Typography
---------------------------------------------- */
 body {
-	font-family:  "Lato", sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #282828;
-	background-color: #c9d8d5;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #282828;
+  background-color: #c9d8d5;
 }
-
 
 h1,
 h2,
@@ -38,296 +13,255 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "lato", sans-serif;
-	margin: .5em 0;
-	font-size: 1.75rem;
+  font-family: "lato", sans-serif;
+  margin: 0.5em 0;
+  font-size: 1.75rem;
 }
 
 p {
-	margin: 0 0 1.5em;
-	font-size: 1.2rem;
+  margin: 0 0 1.5em;
+  font-size: 1.2rem;
 }
 
-h2 {font-size: 1.5rem;}
+h2 {
+  font-size: 1.5rem;
+}
 
 a,
-a:visited { 
-	color: #162723;
-	text-decoration: none;
+a:visited {
+  color: #162723;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus,
-
 a:focus {
-	outline: 1px dotted;
+  outline: 1px dotted;
 }
 
 section,
 aside {
-	padding: 0 1rem;
+  padding: 0 1rem;
 }
 
-/* Header
---------------------------------------------- */
-
-/* Page Header */
 .page-header img {
-	display: block;
-	object-fit: cover;
-	object-position: center;
-	margin: 0 auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
 }
 
 .page-header h1 {
-	font-family: "Oregano", cursive;
-	padding-top: 3rem;
-	top: 50%;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	margin: 2rem;
-	font-size: 4rem;
-	text-align: center;
+  font-family: "Oregano", cursive;
+  padding-top: 3rem;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 2rem;
+  font-size: 4rem;
+  text-align: center;
 }
 
-@media (min-width: 43.75em) 
-{
-	.page-header h1 {
-		font-size: 10rem;
-	}
-	
-	.page-header img {
-		width: 60%;
+@media (min-width: 43.75em) {
+  .page-header h1 {
+    font-size: 10rem;
+  }
 
-	}
+  .page-header img {
+    width: 60%;
+  }
 }
-/* Navigation */
+
 .site-wrapper {
-	max-width: 120rem;
-	margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .site-header {
-	background-color: #E5C6A9;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  background-color: #e5c6a9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.site-name, .site-name:visited {
-	max-width: 6rem;
-	margin: 1rem;
-	font-size: 1.6rem;
-	color:rgb(72, 37, 37)
-	
-	}
+.site-name,
+.site-name:visited {
+  max-width: 6rem;
+  margin: 1rem;
+  font-size: 1.6rem;
+  color: rgb(72, 37, 37);
+}
 
 .site-logo {
-	max-width: 6rem;
-	margin: 1rem;
+  max-width: 6rem;
+  margin: 1rem;
 }
 
 .site-logo img {
-	display: block;
+  display: block;
 }
 
 .site-navigation {
-	padding: 0 1rem;
-	background-color: #E5C6A9;
+  padding: 0 1rem;
+  background-color: #e5c6a9;
 }
 
 .site-navigation ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	background-color: #E5C6A9
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #e5c6a9;
 }
 
 .site-navigation a {
-	display: block;
-	padding: 1rem;
-	font-size: 1.35rem;
-	text-decoration: none;
-	font-family: "Lato", sans-serif;
-	font-weight: 600;
+  display: block;
+  padding: 1rem;
+  font-size: 1.35rem;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
 }
 
 .site-navigation ul {
-	display: none;
-	position: absolute;
-	top: 4.5rem;
-	left: 0;
-	right: 0;
-	z-index: 2;
-	background-color: #E5C6A9;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #e5c6a9;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .site-navigation.toggled ul {
-	display: block;
+  display: block;
 }
 
 .menu-toggle {
-	display: block;
-	background-color: transparent;
-	border: 0;
-	padding: 1rem;
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
 }
 
-.menu-toggle:focus { 
-	border: 0;
-	outline: 1px dotted;
+.menu-toggle:focus {
+  border: 0;
+  outline: 1px dotted;
 }
 
-@media (min-width: 43.75em) 
-{
+@media (min-width: 43.75em) {
+  .menu-toggle {
+    display: none;
+  }
 
-	.menu-toggle {
-		display: none;
-	}
+  .site-navigation {
+    padding: 0 1rem;
+    flex: 1 1 auto;
+  }
 
-	.site-navigation {
-		padding: 0 1rem;
-		flex: 1 1 auto;
-	}
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 0;
+  }
 
-
-	.site-navigation ul,
-	.site-navigation.toggled ul {
-		display: flex;
-		justify-content: flex-end;
-		position: relative;
-		top: 0;
-		
-	}
-
-	.site-navigation a {
-		line-height: 4.5rem; 
-		padding: 0 1rem;
-		background-color: #E5C6A9
-	}
+  .site-navigation a {
+    line-height: 4.5rem;
+    padding: 0 1rem;
+    background-color: #e5c6a9;
+  }
 }
 
+@media (min-width: 50em) {
+  .section-about {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 7rem;
+  }
+}
 
-/* Main
---------------------------------------------- */
+.project-text {
+  padding: 1rem;
+}
 
-/* -----------About-------------- */
-	/* code for about section */
-	/* media for about section */
+.project-name {
+  text-align: center;
+  font-size: 1.2rem;
+}
 
-	@media (min-width: 50em) {
-		
-		.section-about {
-		width: 50%;
-		margin: 0 auto;
-		text-align: center;
-		padding-top: 7rem;
-	}
-	
-	}
-/* ----------projects---------
- */	/* code for projects section */
-	/* media for projects section */
+.project {
+  margin: 0.5rem auto;
+  max-width: 12rem;
+}
 
-	.project-text{
-		padding: 1rem;
-	}
+img {
+  border-radius: 20%;
+}
 
-	.project-name {
-		text-align: center;
-		font-size: 1.2rem;
-	}
-	
-	.project {
-		margin: .5rem auto;
-		max-width: 12rem;
-	}
+@media (min-width: 50em) {
+  .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .section-projects {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
 
-	img {
-		border-radius: 20%;
-	}
+.contact-me img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 8rem;
+  height: auto;
+}
 
-	@media (min-width: 50em) {
-		.projects-wrapper {
-			display:flex;
-			flex-wrap: wrap;
-			gap: 1rem;
-			justify-content: center;
-		}
-		.section-projects {
-			display: flex;
-			flex-direction: row-reverse;
-			padding-top: 7rem;
-			padding-bottom: 10rem;
-			display: block;
-			margin: auto;
-			text-align: center;
-		
-		}
-	
-		}
+@media (min-width: 50em) {
+  .projects-wrapper {
+    margin: 0 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+  }
 
-
-/* ------------contact---------
- */	/* code for contact section */
-	/* media for contact section */
-
-
-	.contact-me img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 8rem;
-		height: auto;
-	
-	
-	}
-
-	@media (min-width: 50em) {
-		.projects-wrapper {
-			margin: 0 10rem;
-			display:flex;
-			flex-wrap: wrap;
-			gap: 5rem;
-			justify-content: center;
-		
-		}
-	
-		.contact-me {
-			text-align: center;
-			padding-top: 5rem;
-			padding-bottom: 5rem;
-			
-		}
-
-	}
-
-/* Footer
---------------------------------------------- */
+  .contact-me {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
 
 .site-footer {
-	align-content: center;
-	padding-left: 2rem;
-	padding-top: 2rem;
-	text-align: center;
-	top: 4.5rem;
-	background-color: #E5C6A9;
-	font-family:  "Lato", sans-serif;
-	font-weight: 600;
-	}
-	
+  align-content: center;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  top: 4.5rem;
+  background-color: #e5c6a9;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
 
-@media (max-width: 34.5em){
-	.site-footer {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content:space-between;
-		padding: 2rem;
-
-	}
-
+@media (max-width: 34.5em) {
+  .site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
 }
